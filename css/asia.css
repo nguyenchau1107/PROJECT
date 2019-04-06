@@ -1,0 +1,15 @@
+.title1{
+    font-size: 2em;
+    font-style: italic;
+    color: rgba(86,86,86,0.91);
+    margin-top: 5%;
+    text-align: center;
+}
+
+.hr-title{
+    height: 2px;
+    background: rgba(116,116,116,0.73);
+    color: rgba(116,116,116,0.73);
+    margin-top: 0%;
+    margin-bottom: 2%;
+}

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background01{
+    background-image: url("../images/background/bg-allsanpham.jpg");
+    filter: blur(0);
+}
+.button {
+    border-radius: 30px;
+    background-color: white;
+    width: 70%;
+    color: black;
+    margin: auto auto auto 15%;
+    border: 1px solid;
+}
+
+.btn:hover {
+    color: white;
+    background: #1e3748;
+    border-radius: 30px;
+}
+
+.buttonMuaHang {
+    border-radius: 30px;
+    background-color: rgba(11, 165, 98, 0.74);
+    width: 45%;
+    color: #1e3748;
+    margin: auto;
+    /*border: 1px solid black;*/
+}
+
+.buttonClose {
+    border-radius: 30px;
+    background-color: white;
+    width: 45%;
+    color: black;
+    margin: auto 5% auto 2%;
+    border: 1px solid;
+    outline: none;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: none;
+}
+
+.lined-heading {
+    z-index: 2;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 50px;
+    text-align: center;
+    display: block;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+
+h2.lined-heading:before {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 2px solid #ccc;
+    content: "";
+}
+
+h2.lined-heading span {
+    position: relative;
+    z-index: 1;
+    padding: 10px 20px;
+    background: #123964;
+    color: white;
+    display: inline-block;
+}
+
+.diadiem {
+    text-align: center;
+    color: black;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.nhap {
+    border-radius: 5px;
+}
+
+.seller {
+
+    margin-top: -290px;
+    margin-left: 380px;
+    margin-bottom: 230px;
+}
+
+.hang {
+    position: relative;
+    overflow: hidden;
+}
+
+.hang div {
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: rgba(30, 86, 176, 0.56);
+    line-height: 45px;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: white;
+    font-size: large;
+    /*z-index: 2;*/
+}
+
+.nhap:hover .hang div {
+    top: 0;
+}
+
+.hang img {
+    transition: all 1s ease;
+}
+
+.nhap:hover .hang img {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.nhap:hover {
+    border: 1px solid darkred;
+}
+
+.content-pr {
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+
+}
+.content-pr ul{
+    padding-left: 10%;
+}
+
+.samsung:hover {
+    border: 1px solid blue;
+}
+
+.toshiba:hover {
+    border: 1px solid red;
+}
+
+.hangToshiba div {
+    background-color: ghostwhite;
+    color: red;
+
+}
+
+.hangPanasonic div {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.panasonic:hover {
+
+    border: 1px solid black;
+}
+
+
+
+.tab1 {
+    margin-left: 60%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.name {
+    background-color: #1b3446;
+    padding: 5px 10px;
+    color: #1BBC9B;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.name h3{
+    border-bottom: 1px solid #107b5a;
+    margin-top: 7px;
+}
+
+
+.tab-content {
+    /*height: 50%;*/
+    width: 100%;
+    overflow: hidden;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: snow;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+
+}
+
+.tab2 {
+    border: 1px solid navy;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: gainsboro;
+
+}
+
+.background {
+
+    background-image: url("../images/sanpham/christmas-decorations-1150015_960_720.jpg");
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+
+}
+.new-img{
+    position: absolute;
+    top:0;
+    left: 2%;
+    z-index: 1;
+}
+.new-img-1{
+    position: absolute;
+    top:2%;
+    left: 5%;
+    z-index: 1;
+}
+.new-img-2{
+    position: absolute;
+    top:0;
+    left: 4%;
+    z-index: 1;
+}
+footer{
+    margin-top: 0;
+}

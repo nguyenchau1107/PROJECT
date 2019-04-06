@@ -1,0 +1,898 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: rgba(15, 150, 112, 0.02);
+}
+
+.box-shadow-b {
+    box-shadow: 3px 3px 6px #222222;
+}
+
+.box-shadow-w {
+    box-shadow: 0 0 12px #d6d6d6;
+}
+
+.breadcrumb {
+    background-color: white;
+}
+
+.active-box {
+    box-shadow: 0 0 10px #1a3345;
+    transition: all .5s ease;
+    /*color: #1BBC9B;*/
+}
+
+.active-box:hover {
+    box-shadow: 0 0 20px #1BBC9B;
+}
+
+
+
+/*=======================================
+button view
+=======================================*/
+.button-view .span1 {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    background-color: rgba(0, 125, 99, 0.91);
+    width: 105px;
+    line-height: 35px;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.button-view .span1-1 {
+    position: relative;
+    z-index: 3;
+    transition: .5s;
+}
+
+.button-view .span1-2 {
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    background-color: rgba(1, 92, 69, 0.73);
+    width: 105px;
+    height: 40px;
+    z-index: 2;
+    transition: all 0.5s ease;
+}
+
+.button-view:hover .span1-2 {
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+.button-view .span2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #015c45;
+    color: black;
+    overflow: hidden;
+}
+
+.button-view .span2 .span2-1 {
+    position: absolute;
+    left: 28%;
+    top: 28%;
+    width: 50%;
+}
+
+.button-view .span2 .span2-2 {
+    position: absolute;
+    left: -128%;
+    top: 28%;
+    width: 50%
+}
+
+.button-view:hover .span2 .span2-1 {
+    left: 128%;
+    transition: 0.7s;
+}
+
+.button-view:hover .span2 .span2-2 {
+    left: 28%;
+    transition: all .7s ease;
+}
+
+/*=============================*/
+/*background*/
+/*=============================*/
+.background01{
+    filter: blur(0);
+}
+#background02 {
+    top: 45%;
+    background-color: rgba(252, 255, 246, 0.2);
+    color: #222222;
+}
+
+#background02 #img-sale {
+    width: 15%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    opacity: .9;
+    z-index: 1;
+}
+
+#background02 h2 {
+    color: #107b5a;
+}
+
+#background02 div {
+    border: none;
+    height: 130px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#background02 div h2 {
+    border-bottom: 1px solid #1b3446;
+}
+
+#background02 a {
+    text-decoration: none;
+    color: #1BBC9B;
+    padding: 15px 20px 10px 20px;
+    background-color: rgba(255, 192, 0, 0);
+    float: right;
+    margin: 10px 10px 5px 0;
+    border: 1px solid #1BBC9B;
+    transition: .5s;
+}
+
+#background02 a:hover {
+    background-color: #1BBC9B;
+    color: white;
+    transition: .5s;
+}
+
+/*===========================
+lap dat
+===========================*/
+#lapdat {
+    /*margin-top: 30px;*/
+    /*padding-top: 20px;*/
+}
+
+#lapdat .thumbnail {
+    border-radius: 0;
+    background-color: #FAFCFC;
+    border: none;
+    padding: 0;
+    transition: all .5s ease;
+}
+
+#lapdat h3,
+#lapdat p {
+    cursor: context-menu;
+}
+
+#lapdat p {
+    /*margin-top: -10px;*/
+}
+
+#lapdat .thumbnail-lapdat {
+    width: 100%;
+    height: 50px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#lapdat h3.h4-01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #555555;
+    line-height: 35px;
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#lapdat h3.h4-02 {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    color: #1BBC9B;
+    line-height: 35px;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+#lapdat .thumbnail:hover h3.h4-01 {
+    transition: all 1s ease;
+    left: 100%;
+    opacity: 0;
+}
+
+#lapdat .thumbnail:hover h3.h4-02 {
+    transition: all 1s ease;
+    left: 0;
+    opacity: 1;
+}
+
+#lapdat .rotate360 {
+    display: inline-block;
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#lapdat div span {
+    font-size: 45px;
+    color: #019875;
+    border: 1px solid #019875;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+
+#lapdat .thumbnail:hover .rotate360 span {
+    background-color: #019875;
+    color: white;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+/*=======================================
+thong tin
+=======================================*/
+#thongtin {
+    margin: 20px auto;
+}
+
+#thongtin .thumbnail {
+    border-radius: 0;
+    padding: 0;
+    border: none;
+    position: relative;
+    background-color: white;
+}
+
+.title-thongtin h3 {
+    color: #107b5a;
+    text-align: center;
+}
+
+.title-thongtin {
+    line-height: 25px;
+}
+
+
+.title-thongtin span {
+    color: #1BBC9B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.div1-tt {
+    height: 50px;
+    width: 100%;
+    background-color: #015C45;
+    position: relative;
+    transition: all .5s;
+}
+
+.div1-tt i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: white;
+    font-size: 2em;
+    transition: all 1s ease;
+}
+
+.div1-tt b {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: white;
+    font-size: 2em;
+    transition: all 1.3s ease;
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+#thongtin .thumbnail:hover .div1-tt i {
+    left: 45%;
+    transform: rotate(180deg);
+    transition: all 1.3s ease;
+    opacity: 0;
+}
+
+#thongtin .thumbnail:hover .div1-tt b {
+    left: 45%;
+    transform: rotate(360deg);
+    transition: all 1s ease;
+    opacity: 1;
+}
+
+#thongtin .thumbnail .noidung-thongtin {
+    padding: 0 5px 60px 10px;
+}
+
+.noidung-thongtin ul {
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.noidung-thongtin ul li {
+    list-style: none;
+    background: url("../images/home/tick.png") no-repeat;
+    padding: 0 0 15px 20px;
+    cursor: context-menu;
+}
+
+.noidung-thongtin ul li:hover {
+    color: #1BBC9B;
+}
+
+#thongtin .thumbnail .noidung-thongtin h3 {
+    color: #1BBC9B;
+    border-bottom: 2px solid #015e46;
+    padding-bottom: 5px;
+}
+
+#thongtin .thumbnail .noidung-thongtin a {
+    text-decoration: none;
+    color: #222222;
+}
+
+#thongtin .thumbnail .noidung-thongtin a:hover h4 {
+    color: #1BBC9B;
+}
+
+/*================
+Tab
+==================*/
+#tabs-container {
+    /*margin-top: 22px;*/
+}
+
+.tabs-menu {
+    float: left;
+    clear: both;
+    list-style-type: none;
+}
+
+.tabs-menu li {
+    padding: 9px 3px 3px 3px;
+    background-color: white;
+    float: left;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    position: relative;
+    transition: all .3s ease;
+    margin-right: -1px;
+}
+
+.tabs-menu li:hover {
+    box-shadow: 2px 2px 6px #222222;
+    z-index: 20;
+}
+
+.tabs-menu li.current {
+    position: relative;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    box-shadow: 2px 2px 6px #222222;
+    transition: all .3s ease;
+}
+
+.tabs-menu li a {
+    padding: 10px;
+    text-transform: uppercase;
+    color: #555555;
+    text-decoration: none;
+}
+
+.tabs-menu .current a {
+    color: #1BBC9B;
+}
+
+.tab {
+    border: 1px solid #d4d4d1;
+    background-color: #fff;
+    float: left;
+    margin-bottom: 20px;
+    clear: both;
+    margin-top: -11px;
+    box-shadow: 3px 3px 3px #555555;
+    width: 100%;
+}
+
+.tab .tab-content {
+    width: 100%;
+    padding: 20px 20px 40px 20px;
+    display: none;
+    position: relative;
+    height: 170px;
+    overflow: auto;
+}
+
+#tab-1 {
+    display: block;
+}
+
+/*=======================================
+san pham
+=======================================*/
+.tag-class {
+    position: relative;
+    /*margin-top: 20px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.tag-class .line-tag {
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.tag-class .line-tag:before{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    width: 47%;
+    border-bottom: 1px dashed #8D7346;
+    bottom: 50%;
+    left: 0;
+    content: "";
+}
+.tag-class .line-tag:after{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    width: 47%;
+    border-bottom: 1px dashed #8D7346;
+    bottom: 50%;
+    right: 0;
+    content: "";
+}
+.tag-class span{
+    color: #107b5a;
+}
+#huy-products-demo {
+    position: relative;
+}
+
+#huy-products-demo .row .col-md-3 {
+    position: sticky;
+    top: 60px;
+    right: 0;
+}
+
+/*  =========================================================
+list product
+  =========================================================*/
+#huy-products-demo {
+    padding: 15px 0 15px 0;
+}
+
+#huy-products-demo .huy-radius-0 {
+    border-radius: 0;
+    margin-top: 15px;
+}
+
+#huy-products-demo .huy-mucluc {
+    border-top: 4px solid #1e2d40;
+    border-left: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    background-color: white;
+    /*margin-bottom: 15px;*/
+}
+
+#huy-products-demo .huy-mucluc .huy-mucluc-tieude {
+    width: 100%;
+    border-bottom: 1px solid darkslategray;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #274a63;
+    color: white;
+    cursor: pointer;
+}
+#huy-products-demo .huy-mucluc .huy-mucluc-tieude:hover{
+    color: #1abc9c;
+}
+.huy-mucluc ul {
+    list-style: none;
+    padding: 0 0 10px 10px;
+    margin: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid darkgray;
+}
+
+.huy-mucluc ul:active {
+    color: #1BBC9B;
+    font-weight: bold;
+}
+
+.huy-mucluc ul li {
+    border-left: 1px solid #017d5c;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+
+.huy-mucluc ul li a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.huy-mucluc ul li a:hover {
+    color: #1b6d85;
+}
+
+#s2 li,
+#s3 li {
+    display: none;
+}
+
+.huy-mucluc input {
+    margin: 10px 10px 5px 10px;
+}
+
+.huy-mucluc button {
+    margin: 10px auto;
+    display: block;
+    background-color: #1BBC9B;
+    border-radius: 0;
+}
+
+.huy-mucluc button:hover {
+    background-color: #017d5c;
+    color: white;
+}
+
+/*=====================
+product
+=====================*/
+.huy-product-content {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid darkslategray;
+    border-top: 4px solid darkslategray;
+}
+
+.huy-pr2 {
+    position: relative;
+    padding-bottom: 45px;
+    margin-bottom: 20px;
+}
+
+.huy-pr2 h3 {
+    border-bottom: 2px solid #017d5c;
+    color: #107b5a;
+}
+
+.huy-pr2 .col-md-12 span {
+    font-size: .8em;
+}
+
+
+/*=======================*/
+/*product*/
+/*=======================*/
+.samsung:hover{
+    border: 1px solid blue;
+}
+.toshiba:hover{
+    border: 1px solid red;
+}
+.panasonic:hover{
+    border: 1px solid black;
+}
+.samsung .hang div{
+    background-color: rgba(30, 86, 176, 0.56);
+    color: white;
+}
+.toshiba .hang div{
+    background-color: ghostwhite;
+    color: red;
+}
+.panasonic .hang div{
+    background-color: whitesmoke;
+    color: black;
+}
+
+/*=================================*/
+/*slide product*/
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+.owl-carousel {
+    display: none;
+    position: relative;
+    width: 100%;
+    -ms-touch-action: pan-y
+}
+
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative
+}
+
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    transition: height 500ms ease-in-out
+}
+
+.owl-carousel .owl-item {
+    float: left
+}
+
+.owl-controls .owl-buttons div, .owl-controls .owl-page {
+    cursor: pointer
+}
+
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0)
+}
+
+.owl-nav{
+    text-align:right;
+    margin-bottom:10px;
+}
+.owl-nav a i{
+    width:23px;
+    height:23px;
+    line-height: 23px;
+    background: #1BBC9B;
+    border-bottom:1px solid #1b3446;
+    color: white;
+    display:inline-block;
+    border-radius:2px;
+    font-size:12px;
+    text-align:center;
+    cursor:pointer;
+}
+.owl-nav a i:hover{
+    color: #1abc9c;
+    background: #1b3446;
+    border-color: #aaa;
+}
+.owl-nav a i:active{
+    color: white;
+}
+.owl-nav a.owl-nav-prev i{
+    margin-right:3px;
+}
+/*==============================
+contact - feedback
+==============================*/
+#contact-feedback {
+    margin-top: 30px;
+    background-color: #fcfcfc;
+}
+
+#contact-feedback .tag-class{
+    width: 100%;
+    margin-bottom: -10px;
+}
+#contact-feedback .line-tag:before,
+#contact-feedback .line-tag:after{
+    border-width: 1px;
+    width: 48%;
+}
+
+#line-ct-fb {
+    text-align: center;
+    display: block;
+    position: relative;
+    z-index: 2;
+    margin-top: -15px;
+}
+
+#line-ct-fb:before {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px dashed #8D7346;
+    border-left: 1px dashed #8D7346;
+    border-right: 1px dashed #8D7346;
+    top: 10%;
+    height: 200px;
+    content: "";
+    margin-top: -150px;
+}
+
+#line-ct-fb span {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 15px;
+    margin: 30px 10px 10px 10px;
+    color: #107b5a;
+    background-color: white;
+    border: 2px solid #107b5a;
+}
+
+#line-ct-fb span:hover {
+    background-color: #107b5a;
+    color: white;
+}
+
+/*==============================
+slide feedback
+==============================*/
+#portfolio {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.bg-feedback {
+    color: white;
+    background: url("../images/home/feedback/bg-fb6.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-indicators {
+    margin-bottom: -10px;
+}
+
+.carousel-indicators li {
+    border-color: #8D7346;
+    border-radius: 0;
+    width: 30px;
+    height: 6px;
+}
+
+.carousel-indicators li.active {
+    background-color: #8D7346;
+    width: 30px;
+    height: 6px;
+    margin-bottom: 1px;
+}
+
+.item {
+    height: 80px;
+    overflow: hidden;
+    margin: 10px 0 40px 0;
+    font-size: 19px;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 4em;
+    border-right: 3px solid #8d7346;
+    color: #1abc9c;
+}
+
+.item span {
+    font-style: italic;
+    font-size: 19px;
+    line-height: 2.2em;
+}
+
+#img-feedback {
+    margin: 20px auto;
+}
+
+#img-feedback img {
+    width: 130px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgba(31, 48, 70, 0.5);
+    margin: 5px;
+    transition: .5s;
+}
+
+#img-feedback img:hover {
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+/*end feedback*/
+
+.padding-of-col {
+    padding: 15px 15px 5px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    #huy-products-demo .row .col-md-3 {
+        position: inherit;
+    }
+
+    .item {
+        height: 210px;
+    }
+
+    .item h4 {
+        border: none;
+    }
+
+    #thongtin .col-md-5 div {
+        margin-top: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    #hotro-tab {
+        position: relative;
+        width: 100%;
+        left: 0;
+        overflow: hidden;
+    }
+
+    #tab-home {
+        margin-top: 10px;
+    }
+
+    .background01 #background02 {
+        top: 30%;
+    }
+
+    #background02 img {
+        right: 0;
+    }
+
+    #background02 h2 {
+        color: #1BBC9B;
+    }
+
+    #line-ct-fb:before {
+        border-left: none;
+        border-right: none;
+    }
+}
+

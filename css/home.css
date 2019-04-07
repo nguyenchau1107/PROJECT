@@ -91,10 +91,9 @@ footer .btn:hover {
 #nav1 a:focus {
 
 }
-
-.active-nav {
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #1BBC9B;
-    font-weight: bold;
+    background: none;
 }
 
 .navbar-inverse .navbar-brand {

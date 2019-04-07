@@ -19,9 +19,9 @@
 
     <!--<script src="Hover Jquery/hover.js"></script>-->
     <script src="gallery.js"></script>
-    <link href="css/navbar-footer.css" rel="stylesheet" type="text/css"/>
+    <link href="css/home.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/gallery.css">
-    <script src="js/navbar-footer.js"></script>
+    <script src="js/home.js"></script>
 
 </head>
 <body>
@@ -42,22 +42,20 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" style="color: #1BBC9B; font-weight: bold"><span
+                    <li><a href="home.html"><span
                             class="glyphicon glyphicon-home"></span> HOME</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="asia.html">
                         <span class="glyphicon glyphicon-map-marker"></span>AREA</a>
                         <ul class="dropdown-menu" id="dropdown-menu-scroll-1">
                             <li><a href="#">ASIA</a></li>
-                            <li><a href="#">EUROPE</a></li>
+                            <li><a href="#">EUROPE</a></li>asia
                             <li><a href="#">AFRICA</a></li>
                             <li><a href="#">AMERICAS</a></li>
                             <li><a href="#">OCEANIA</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html"><span
-                            class="glyphicon glyphicon-picture"></span> GELLARY</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="new1.html"><span
-                            class="glyphicon glyphicon-list-alt"></span> NEWS</a></li>
+                    <li class="active"><a href="gallery.html"><span class="glyphicon glyphicon-picture"></span> GALLERY</a></li>
+                    <li><a href="new1.html"><span class="glyphicon glyphicon-list-alt"></span> NEWS</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-edit"></span> ABOUT US</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-comment"></span> CONTACT US</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal"><span
@@ -436,6 +434,42 @@
         </div>
     </div>
 </footer><!--end footer-->
+
+<section>
+    <div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner">
+    <i class="fa fa-2x fa-arrow-circle-up"></i>
+  </span>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            $(function(){
+
+                $(document).on( 'scroll', function(){
+
+                    if ($(window).scrollTop() > 100) {
+                        $('.scroll-top-wrapper').addClass('show');
+                    } else {
+                        $('.scroll-top-wrapper').removeClass('show');
+                    }
+                });
+
+                $('.scroll-top-wrapper').on('click', scrollToTop);
+            });
+
+            function scrollToTop() {
+                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+                element = $('body');
+                offset = element.offset();
+                offsetTop = offset.top;
+                $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+            }
+
+        });
+
+    </script>
+</section>
 
 </body>
 </html>

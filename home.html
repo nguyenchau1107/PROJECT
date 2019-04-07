@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>NAVBAR-FOOTER</title>
+    <title>HOME</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/navbar-footer.css">
-    <script src="js/navbar-footer.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/home.js"></script>
 </head>
 <body>
 <header>
@@ -29,9 +29,9 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="navbar-footer.html" style="color: #1BBC9B; font-weight: bold"><span
+                    <li class="active"><a href="home.html"><span
                             class="glyphicon glyphicon-home"></span> HOME</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="asia.html">
                         <span class="glyphicon glyphicon-map-marker"></span>AREA</a>
                         <ul class="dropdown-menu" id="dropdown-menu-scroll-1">
                             <li><a href="#">ASIA</a></li>
@@ -41,10 +41,8 @@
                             <li><a href="#">OCEANIA</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="gallery.html"><span
-                            class="glyphicon glyphicon-picture"></span> GELLARY</a></li>
-                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="new1.html"><span
-                            class="glyphicon glyphicon-list-alt"></span> NEWS</a></li>
+                    <li><a href="gallery.html"><span class="glyphicon glyphicon-picture"></span> GALLERY</a></li>
+                    <li><a href="new1.html"><span class="glyphicon glyphicon-list-alt"></span> NEWS</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-edit"></span> ABOUT US</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-comment"></span> CONTACT US</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal"><span
@@ -144,7 +142,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="thumbnail-sv">
-                    <div class="rotate360"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="rotate360"><i class="fa fa-globe" aria-hidden="true"></i></div>
                     <h5>LOCATION</h5>
                     <p>Vestibulum facilisis rhoncus tempor. Duis non ipsum volutpat, rhoncus nisi sed, pulvinar ex.
                         Etiam sit amet libero consequat, convallis odio ac vestibulum urna ac vestibulum urna<br>
@@ -374,5 +372,42 @@
         </div>
     </div>
 </footer><!--end footer-->
+
+<section>
+    <div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner">
+    <i class="fa fa-2x fa-arrow-circle-up"></i>
+  </span>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            $(function(){
+
+                $(document).on( 'scroll', function(){
+
+                    if ($(window).scrollTop() > 100) {
+                        $('.scroll-top-wrapper').addClass('show');
+                    } else {
+                        $('.scroll-top-wrapper').removeClass('show');
+                    }
+                });
+
+                $('.scroll-top-wrapper').on('click', scrollToTop);
+            });
+
+            function scrollToTop() {
+                verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+                element = $('body');
+                offset = element.offset();
+                offsetTop = offset.top;
+                $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+            }
+
+        });
+
+    </script>
+</section>
+
 </body>
 </html>

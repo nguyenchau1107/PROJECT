@@ -1,0 +1,22 @@
+.container .head-about-text{
+    text-align: center;
+}
+.container .about-text{
+    text-align: justify;
+}
+.container .the-team img{
+    padding-left: 5%;
+}
+/*.container .the-team img{*/
+/*   clear: both;*/
+/*}*/
+.container .the-team .team-text{
+    /*margin-left: 5%;*/
+    text-align: justify;
+}
+.team-text h4{
+    line-height: 25px;
+}
+.bottom-team{
+    margin-top: 5%;
+}

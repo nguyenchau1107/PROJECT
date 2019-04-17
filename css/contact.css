@@ -1,0 +1,25 @@
+
+.container h2{
+    /*margin-left: 2%;*/
+}
+.container a img{
+    width: 100%;
+}
+.container p{
+    line-height: 40px;
+    font-size: 15px;
+}
+.container .contact-h2{
+    clear: both;
+    margin-top: 5%;
+}
+/*.container .icons{*/
+/*    font-size: 20px;*/
+/*    line-height: 30px;*/
+/*}*/
+.container p i{
+    font-size: 32px;
+}
+.container .icon-twitter{
+    margin-left: 5%;
+}

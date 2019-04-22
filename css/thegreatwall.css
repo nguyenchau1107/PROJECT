@@ -1,0 +1,91 @@
+
+h1{
+    font-size: 3em;
+    color: #ae1207;
+    margin-bottom: 0%;
+    margin-top: 6%;
+}
+.hr1{
+    height: 0.24em;
+    width: 123px;
+    background: #d61809;
+    color: #d61809;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    float: left;
+}
+
+.row1{
+    color:rgba(51,51,51,0.85);
+    text-align: center;
+}
+.img1{
+    margin: auto;
+    width: 80%;
+}
+.text1{
+    font-size: 1.25em;
+    line-height: 145%;
+    text-align: justify;
+}
+.row1 span{
+    font-weight: bold;
+    color: rgba(51,51,51,0.93);
+}
+.caption{
+    font-size: 2.5em;
+}
+.video{
+    width: 100%;
+    height: 450px;
+    margin-top: 2%;
+}
+.map{
+    text-align: center;
+}
+h3{
+    color: rgba(200,23,9,0.91);
+    font-size: 25px;
+    font-style: italic;
+margin-top: 0%;
+    margin-bottom: 3%;
+}
+.title3{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 6%;
+}
+h4{
+    margin-top: 5%;
+}
+.hr2{
+    color: darkgray;
+    height: 1.5px;
+    background-color: darkgray;
+
+}
+.text-bold{
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+input{
+    width: 94%;
+    height: 49px;
+    margin-bottom: 2%;
+}
+.feedback{
+    line-height: 11px;
+    padding-left: 39px;
+}
+.text2{
+    font-weight: bold;
+}
+.text3{
+    font-size: 13px;
+}
+.text4{
+    color: gray;
+}
+.img2{
+    margin-right: 1%;
+}

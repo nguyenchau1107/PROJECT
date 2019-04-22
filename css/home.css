@@ -388,8 +388,6 @@ Login
         width: 90%;
     }
 
-    #huy-back-to-top,
-    #add-to-cart,
     #login .vl {
         display: none;
     }
@@ -419,7 +417,7 @@ Login
 
 #background {
     margin-top: 3%;
-    background-image: url(https://cdn.pixabay.com/photo/2015/12/08/00/51/mount-rushmore-1082123_960_720.jpg);
+    background-image: url(https://www.pandotrip.com/wp-content/uploads/2018/03/Colosseum-in-Rome-during-morning-hours.jpg);
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;

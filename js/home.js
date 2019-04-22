@@ -13,7 +13,7 @@ function scrollFunction() {
             document.getElementById("dropdown-menu-scroll-3").style.backgroundColor = "rgba(255,152,76,0.57)";
         } else {
             document.getElementById("nav1").style.padding = "60px 0";
-            document.getElementById("logo").style.width = "300px";
+            document.getElementById("logo").style.width = "200px";
             document.getElementById("logo").style.marginTop = "-40px";
             document.getElementById("logo").style.marginLeft = "0";
             document.getElementById("nav1").style.backgroundColor = "rgba(255,152,76,0.57)";
